@@ -24,6 +24,6 @@ with open("pred_results.json","r",encoding="utf-8")as result:
                 it.append(int(clas[0]))
                 it.append(float(format(clas[1],'.3f')))
                 it.extend(list(map(int, clas[2:6])))
-                txt.writelines(it[0]+" "+str(it[1])+" "+str(it[2])+" "+str(it[3])+" "+str(it[4])+" "+str(it[5])+"\n")
+                txt.writelines(it[0]+" "+str(it[2])+" "+str(it[3])+" "+str(it[4])+" "+str(it[5])+" "+str(it[6])+" "+str(it[1])+"\n")
                 print("成功写入：{}".format(it))
                 
